@@ -5,7 +5,7 @@ and getinverse
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-i<-NULL
+                i<-NULL
 		set<-function(y) {
 		x<<-y
 		i<<-NULL
@@ -35,3 +35,15 @@ cacheSolve <- function(x, ...) {
 		x$setinverse(i)
 		i
 }
+
+##sample run
+x=rbind(c(1,2),c(3,4))
+> m=makeCacheMatrix(x)
+> m$get()
+     [,1] [,2]
+[1,]    1    2
+[2,]    3    4
+> cacheSolve(m)
+     [,1] [,2]
+[1,] -2.0  1.0
+[2,]  1.5 -0.5
