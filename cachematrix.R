@@ -1,7 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 caching an inverse of a matrix..makeCacheMatrix creates a matrix by storing a list of functions such as get, set, setinverse 
-and getinverse
+and getinverse 
+
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
